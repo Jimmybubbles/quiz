@@ -1,0 +1,30 @@
+h1 {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size:medium;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .question div {
+    width: 100px;
+    height: 100px;
+  }
+
+.timer{
+    display: flex;
+    align-items: right;
+    justify-content: space-evenly;
+
+}
+.clock{
+    display: flex;
+    float: right;
+    
+
+}
