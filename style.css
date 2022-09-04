@@ -1,18 +1,37 @@
 h1 {
-    font-size: large;
+     
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
-    font-size:medium;
+    
+    font-family: 'Courier New', Courier, monospace;
+
 }
+body{
+    background-color: darkgray;
+}
+
+p {
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+    height: 70px;
+    width: 200px;
+
+} 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: grey;
+    height: 400px;
   }
   
   .question div {
-    width: 100px;
+    width: 200px;
     height: 100px;
   }
 
@@ -20,11 +39,51 @@ h2{
     display: flex;
     align-items: right;
     justify-content: space-evenly;
-
 }
-.clock{
+.score{
+    border: 2px solid #000;
+}
+
+
+#clock{
     display: flex;
     float: right;
-    
+    border: 2px solid #000; 
+}
+.btn-group{
+    width: 500px;
+    height: 300px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
+    
+.buttonClass {
+    font-size:17px;
+    font-family:Arial;
+    padding: 10px 10px;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    position: relative;
+    color:#ffffff;
+    border-color:#337fed;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    text-shadow:inset 0px 7px 0px #1570cd;
+    background:linear-gradient(#3d94f6, #1e62d0);
+  }
+  
+  .buttonClass:hover {
+    background: linear-gradient(#1e62d0, #3d94f6);
+  }
+                
