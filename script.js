@@ -5,7 +5,7 @@ let time = startingMinutes * 60;
 
 const countdownEL = document.getElementById('countdown');
 
-setInterval(updateCountdown, 1000);
+t = setInterval(updateCountdown, 1000);
 
 
 function updateCountdown(){
@@ -19,7 +19,7 @@ function updateCountdown(){
     time--;
 
     if(time === 0){
-        clearInterval(updateCountdown);
+        clearInterval(t);
     }
     
 }
