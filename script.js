@@ -11,7 +11,23 @@ let time = startingMinutes * 60;
 
 const countdownEL = document.getElementById('countdown');
 
+var start = true;
 
+function iterate(id) {
+
+    //getting the result display section
+    var result = document.getElementsByClassName("result");
+    result[0].innerText = "";
+
+    // getting the question
+    const question = document.getElementById("question");
+
+    // setting the question text
+    question.innerText = Questions[id].q;
+
+    // getting the options
+    const op1 = 
+}
 
 
 

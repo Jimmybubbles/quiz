@@ -1,29 +1,46 @@
-var questions [
+const questions [{
+        
+        id: 0,
+        q: "What operator returns the remainder left over when one operand is divided by a second operand.",
+        a: [{ text: "+=", isCorrect:false}, 
+            { text: "&", isCorrect:false},
+            { text: "%", isCorrect:true},
+            { text: "#", isCorrect:false}
+        ]
     
-    {
-        question: "What operator returns the remainder left over when one operand is divided by a second operand.",
-        multiChoice: ["+=", "&", "%", "#"],
-        answer: "% Modulo"
     },
 
     {
-        question: "What does .length do in JavaScript?",
-        multiChoice: ["returns length of time", "returns length of string", "returns length of flexbox", "returns length of css"],
-        answer: "returns length of string"
+        id: 1,
+        q: "What does .length do in JavaScript?",
+        a: [{ text: "returns length of time", isCorrect:false}, 
+            { text: "returns length of string", isCorrect:true}, 
+            { text: "returns length of flexbox", isCorrect:false},
+            { text: "returns length of css", isCorrect:false}
+        ]
+        
     },
 
     {
-        question: "What operator returns the remainder left over when one operand is divided by a second operand.",
-        multiChoice: ["+=", "&", "%", "#"],
-        answer: "% Modulo"
-    },
+        id: 2,
+        q: "what does a boolean return?",
+        a: [{ text: "number", isCorrect:false}, 
+            {"string", isCorrect: false}, 
+            {"true/false", isCorrect: true}, 
+            {"error", isCorrect: false}
+        ]
+        
+    }
 
-    {
-        question: "What operator returns the remainder left over when one operand is divided by a second operand.",
-        multiChoice: ["+=", "&", "%", "#"],
-        answer: "% Modulo"
+    {   
+        id:3,
+        q: "Which of the following methods can be used to display data in some form using Javascript? ",
+        a: [{ text: "document.getElementbyID", isCorrect:false }, 
+            { text: "console.log", isCorrect:true },
+            { text: "document.length": isCorrect:false},
+            { text: ""}],
+        answer: [0]
     },
 
 ];
 
-answers[]
