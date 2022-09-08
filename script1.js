@@ -1,4 +1,4 @@
-var sec = 75;
+var sec = 50;
 var time = setInterval(quizTimer, 1000);
 
 function quizTimer() {
@@ -115,7 +115,7 @@ var selected = "";
 // Show selection for op1
 op1.addEventListener("click", () => {
     selected = op1.value;
-})
+    })
 
 // Show selection for op2
 op2.addEventListener("click", () => {
@@ -144,7 +144,11 @@ evaluate[0].addEventListener("click", () => {
     } else {
         // WHEN I answer a question incorrectly
         //THEN time is subtracted from the clock
-
+        document.getElementById('timer')
+        sec -= 5
+        if (sec == 0){
+            location.reload();
+        }
         result[0].innerHTML = "Incorrect answer";
         result[0].style.color = "red";
     }
@@ -168,4 +172,6 @@ if (id < 4) {
 }
 
 })
+
+
 

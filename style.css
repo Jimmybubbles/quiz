@@ -12,7 +12,7 @@ body{
 }
 
 p {
-    background-color: white;
+    /* background-color: white; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +20,6 @@ p {
     margin: 0;
     height: 70px;
     width: 200px;
-
-    ;
 
 }
 
@@ -35,6 +33,7 @@ p {
     flex-direction: column;
     background-color: grey;
     height: 400px;
+    
     
   }
 
@@ -140,6 +139,14 @@ p {
     background-color: #BF3325;
 }
 
+.highscore{
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    justify-content: center;
+    justify-items: center;
+}
 
 
 
