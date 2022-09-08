@@ -1,4 +1,4 @@
-var sec = 75;
+var sec = 5;
 var time = setInterval(quizTimer, 1000);
 
 function quizTimer() {
@@ -11,7 +11,15 @@ function quizTimer() {
 }
 
 // when time limit is up return to the home page
-
+function gameOver(){
+    if(sec == 0){
+        //refresh the page
+        
+        const element = document.getElementById("question")
+        element.remove()
+        location.reload();
+    }
+}
 
 //----------------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------------//
@@ -106,37 +114,21 @@ var selected = "";
 
 // Show selection for op1
 op1.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightgoldenrodyellow";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
     selected = op1.value;
 })
 
 // Show selection for op2
 op2.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightgoldenrodyellow";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightskyblue";
     selected = op2.value;
 })
 
 // Show selection for op3
 op3.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightgoldenrodyellow";
-    op4.style.backgroundColor = "lightskyblue";
     selected = op3.value;
 })
 
 // Show selection for op4
 op4.addEventListener("click", () => {
-    op1.style.backgroundColor = "lightskyblue";
-    op2.style.backgroundColor = "lightskyblue";
-    op3.style.backgroundColor = "lightskyblue";
-    op4.style.backgroundColor = "lightgoldenrodyellow";
     selected = op4.value;
 })
 
@@ -152,7 +144,7 @@ evaluate[0].addEventListener("click", () => {
     } else {
         // WHEN I answer a question incorrectly
         //THEN time is subtracted from the clock
-        
+
         result[0].innerHTML = "Incorrect answer";
         result[0].style.color = "red";
     }
