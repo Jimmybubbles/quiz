@@ -1,25 +1,18 @@
-var sec = 50;
+var sec = 3;
 var time = setInterval(quizTimer, 1000);
 
 function quizTimer() {
     document.getElementById('timer').innerHTML = sec + "sec left";
-    sec--;
-    if (sec == -1){
+    
+    if (sec === 0){
         clearInterval(time);
         alert("time limit up! :(");
     }
+    sec--;
 }
 
 // when time limit is up return to the home page
-function gameOver(){
-    if(sec == 0){
-        //refresh the page
-        
-        const element = document.getElementById("question")
-        element.remove()
-        location.reload();
-    }
-}
+
 
 //----------------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------------//
