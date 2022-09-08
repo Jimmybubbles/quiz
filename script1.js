@@ -1,4 +1,4 @@
-var sec = 3;
+var sec = 100;
 var time = setInterval(quizTimer, 1000);
 
 function quizTimer() {
@@ -125,6 +125,10 @@ op4.addEventListener("click", () => {
     selected = op4.value;
 })
 
+
+// if correct answer then go to next question.
+
+
 // Grabbing the evaluate button
 const evaluate = document.getElementsByClassName("evaluate");
 
@@ -134,6 +138,8 @@ evaluate[0].addEventListener("click", () => {
         //prints the true/false
         result[0].innerHTML = "Correct answer  ";
         result[0].style.color = "green";
+        //need to have the next button invoke when the answer is correct.
+        document.getElementsByClassName ('next')
     } else {
         // WHEN I answer a question incorrectly
         //THEN time is subtracted from the clock
