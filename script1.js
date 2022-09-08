@@ -1,4 +1,4 @@
-var sec = 5;
+var sec = 75;
 var time = setInterval(quizTimer, 1000);
 
 function quizTimer() {
