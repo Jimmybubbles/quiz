@@ -13,30 +13,31 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        <div class="timer">
-            <div class="score">high score</div>
-            <div id="clock">time 10:00</div>
-        </div>
-
-        <div class="container">
-            <div class="question">
-                
-                <h1>Commonly used datatypes DO NOT <br> include</h1>
-                <div class="btn-group">
-                    <a href="#" class="buttonClass">1. Strings</a>
-                    <a href="#" class="buttonClass">2. Booleans</a>
-                    <a href="#" class="buttonClass">3. Alerts</a>
-                    <a href="#" class="buttonClass">4. Numbers</a>
-                </div>
-                
+        <div class="panel">
+            <div id="timerDisplay">
+                <p>Time : <span id="timer"></span></p>
             </div>
 
+            <div class="question-container" id="question">
+                Question goes here.
+            </div>
+            <div class="option-container">
+                <button class="option" onclick="" id="op1" >option1</button>
+          
+                <button class="option" id="op2" >option2</button>
+          
+                <button class="option" id="op3">option3</button>
+          
+                <button class="option" id="op4">option4</button>
+            </div>
+            <div class="result">
+                
+            </div>
+            <div class="navigation">
+                <button class="evaluate">Evaluate</button>
+                <button class="next">Next</button>
+            </div>
         </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="script.js" async defer></script>
+        <script src="script1.js"></script>
     </body>
-</html>
+    </html>
