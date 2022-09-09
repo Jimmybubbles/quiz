@@ -7,42 +7,36 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>James quiz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-        
-
-        <div class="panel">
-            <div id="timerDisplay">
-                <p>Time : <span id="timer"></span></p>
-            </div>
+       
+       
+        <div class="nav">
             
-            <div class="question-container" id="question">
-                
-            </div>
-            <div class="option-container" >
-                <button class="option" onclick="" id="op1" class="evaluate" >option1</button>
-          
-                <button class="option" class="evaluate" id="op2" >option2</button>
-          
-                <button class="option" class="evaluate" id="op3">option3</button>
-          
-                <button class="option" class="evaluate" id="op4">option4</button>
-            </div>
-            <div class="result">
-                
-            </div>
-            <div class="navigation">
-                <button class="evaluate">Evaluate</button>
-                <button class="next">Next</button>
-            </div>
-
-
+            <div class="timer" id="timer">timer</div>
+            <div class="highscore" id="highscore">highscore</div>
+        
         </div>
-        <script src="script1.js"></script>
+
+
+       <div id="question">
+        questions populate to this box
+       </div>
+
+       <div id="choices">
+        array of choices gets populated to this box
+       </div>
+
+       <div id="next">
+        next button 
+       </div>
+
+
+        <script src="script1.js" async defer></script>
+        <script src="questions.js" async defer></script>
     </body>
-    </html>
+</html>
