@@ -4,7 +4,8 @@ quiz game
 ## purpose
 
 The quiz requires  questions, the user has a countdown that counts down from 75 seconds clock initiated when they start the quiz,
-they lose 5 seconds if they get an answer wrong. if the user is able to complete the quiz sucessfully,
+they lose 10 seconds if they get an answer wrong. 
+if the user is able to complete the quiz sucessfully,
 then they will be asked to save their time with their name into local storage.
 
 ## built with 
