@@ -20,4 +20,6 @@ this assignment was very challenging I should have allocated more time to design
 
 I looked up different time algos and found one that really helped to understand the count. there are alot of various examples but i try to look for something that is clean logical and easy to understand. 
 
+![snapshot front quiz](https://user-images.githubusercontent.com/110278837/189470681-ea95a9c5-970e-488e-be65-2f3174302476.png)
+
 
