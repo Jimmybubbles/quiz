@@ -42,6 +42,23 @@ var secondsLeft = 75;
 var holdInterval = 0;
 //holds penelty time
 var penalty = 10;
-// new ul element
+// new ul element to create lists
 var list = document.createElement("ul");
+// onclick timer button, shows user a screen display
+timer.addEventListener("click", function() {
+// checking hold intervel
+  if(holdInterval === 0) {
+    holdInterval = setInterval(function (){
+        secondsLeft--;
+        currentTime.textContent = "Time: " + secondsLeft;
+
+        if (secondsLeft <= 0) {
+            clearInterval(holdInterval);
+            alldone();
+            currentTime.textContent = "Time's up!";
+        }
+    }, 1000);
+  }
+
+})
 
