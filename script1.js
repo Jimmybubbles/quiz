@@ -62,3 +62,21 @@ timer.addEventListener("click", function() {
 
 })
 
+// render questions to choice div
+function render(questionIndex) {
+    // loop through the array questions
+    for( var i = 0; i < question.length; i++) {
+        var question = question[questionIndex].title;
+        var multchoice = question[questionIndex].choices;
+        question.textContent = multchoice;
+    }
+
+    //new choice for each question call back
+    multchoice.forEach(function (newItem) {
+        var listItem = document.createElement('li');
+        listItem.textContent = newItem;
+        question.appendchild(list);
+        list.appendchild(listItem);
+        listItem.addEventListener("click", );
+    }
+}
