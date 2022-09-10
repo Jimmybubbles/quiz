@@ -59,7 +59,7 @@ timer.addEventListener("click", function () {
             }
         }, 1000);
     }
-    render(questions);
+    render(questionIndex);
 
 })
 
@@ -105,7 +105,7 @@ function compare(event) {
         }
 
     // Question Index determines number question user is on
-    questions++;
+    questionIndex++;
 
 
     if (questionIndex >= question.length) {
@@ -113,7 +113,7 @@ function compare(event) {
         alldone();
         createDiv.textContent = "End of quiz!" + "your " + score + "/" + questions.length + "correct";
     } else {
-        render(questionsIndex);
+        render(questionIndex);
     }
     questionsDiv.appendChild(createDiv);
 
