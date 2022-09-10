@@ -15,6 +15,8 @@ javascript
 
 ## live site
 
+https://jimmybubbles.github.io/quiz/
+
 ## Challenges
 
 this assignment was very challenging I should have allocated more time to designing the javascript steps. I have learned that i need to read the documentation of javascript fully and allocate more time to working on the weekly assignments. work has taken alot of the time up i managed to get some of the functionality working but there is still work needed on the local storage and understanding how the ids are linked to the click events. i want to re-write the assignment again over the weekend to really understand the linking of functions in the background. enjoyable to learn but im finding the lack of reading biting me when it comes to the assignments. 
