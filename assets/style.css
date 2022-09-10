@@ -21,15 +21,6 @@
     float: right;
 }
 
-textarea {
-    width: 90%;
-    margin: 20px;
-}
-
-button {
-    border-radius: 8px;
-}
-
 #createDiv {
     margin-top: 20px;
     border-top: 1px solid lightgray;
@@ -58,8 +49,20 @@ lable {
 }
 
 input {
-    margin-right: 10px
+    margin-right: 10px;
+    width: 50%;
+    border: 1px solid grey
 }
 
+h1{
+    text-align: center;
+}
 
+textarea {
+    width: 90%;
+    margin: 20px;
+}
 
+button {
+    border-radius: 8px;
+}

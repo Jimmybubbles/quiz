@@ -1,6 +1,6 @@
 //Final Score Appended page
 
-var highScore = document.querySelector("#highScore");
+var highScore = document.querySelector("#highscore");
 var clear = document.querySelector("#clear");
 var goBack = document.querySelector("#goBack");
 
@@ -19,9 +19,9 @@ if (allScores !== null) {
 
     for (var i = 0; i < allScores.length; i++) {
 
-        var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
-        highScore.appendChild(createLi);
+        var createli = document.createElement("li");
+        createli.textContent = allScores[i].initials + " " + allScores[i].score;
+        highScore.appendChild(createli);
     }
 }
 

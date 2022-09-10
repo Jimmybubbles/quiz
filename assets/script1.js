@@ -5,9 +5,9 @@ var questions = [
         answer: "alerts"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-        answer: "parentheses"
+        title: "Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
+        choices: ["Position", "Window", "Standard", "Location"],
+        answer: "Window"
     },
     {
         title: "Arrays in Javascript can be used to store ____.",
@@ -15,14 +15,14 @@ var questions = [
         answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
-        answer: "quotes"
+        title: "Which of the following can be used to call a JavaScript Code Snippet?",
+        choices: ["Function/Method", "Preprocessor", "Triggering Event", "RMI"],
+        answer: "Function/Method"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal / bash", "for loops", "console log"],
-        answer: "console log"
+        title: "Which of the following scoping type does JavaScript use?",
+        choices: ["illogical", "Segmental", "Lexical", "Literal"],
+        answer: "Lexical"
     },
 
 ];
@@ -54,7 +54,7 @@ timer.addEventListener("click", function () {
 
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
-                //alldone();
+                alldone();
                 currentTime.textContent = "Time's up!";
             }
         }, 1000);
@@ -104,11 +104,13 @@ function compare(event) {
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
+    }
+
     // Question Index determines number question user is on
     questionIndex++;
 
 
-    if (questionIndex >= question.length) {
+    if (questionIndex >= questions.length) {
         //all done will append the highscore page
         alldone();
         createDiv.textContent = "End of quiz!" + "your " + score + "/" + questions.length + "correct";
@@ -186,7 +188,7 @@ function alldone() {
                 initials: initials,
                 score: timeRemaining
             }
-            console.log(finaalScore);
+            console.log(finalScore);
             var allScores = localStorage.getItem("allScore");
             if (allScores === null) {
                 allScores = [];
@@ -195,10 +197,9 @@ function alldone() {
             }
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
-            localStorage.setInem("allScores", newScore);
-            window.location.replace(".highscore.html");
-
+            localStorage.setItem("allScores", newScore);
+            window.location.replace("highscore.html");
         }
-    })
-}
+    });
+
 }
